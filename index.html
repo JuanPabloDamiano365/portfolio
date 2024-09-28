@@ -1,0 +1,56 @@
+<html lang="es"><head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+  <style type="text/css" id="operaUserStyle"></style></head>
+  <body>
+    <header id="header-placeholder"><p style="font-size: 1rem;"><b>Juan Pablo Damiano/</b>UADE Designs</p>
+<div class="menu-toggle" id="menu-toggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+<nav id="nav-menu">
+    <a href="index.html">Inicio</a>
+    <a href="conoceme.html">Sobre Mí</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="curriculum.html">Currículum</a>
+    <a href="contacto.html">Contacto</a>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('nav-menu').classList.toggle('active');
+  });
+</script>
+
+</header>
+    <main>
+      <div class="profile-container">
+        <div class="profile-info">
+          <div>
+            <h1>Juan Pablo Damiano</h1>
+            <h1 style="font-weight: lighter">System Admin</h1>
+          </div>
+          <h2>Soy Administrador de sistemas, con especialidad
+            en Blackline, Excel y PoweBI
+        </h2>
+          <a class="button" href="./conoceme.html">Conoceme</a>
+        </div>
+        <div class="profile-image">
+          <img src="./src/Juan_Damiano.jpg" alt="">
+        </div>
+      </div>
+    </main>
+    <footer><p>© 2024 Juan Pablo Damiano. All rights reserved.</p></footer>\
+  
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#header-placeholder").load("header.html");
+  });
+</script>
+</body></html>

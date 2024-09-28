@@ -1,0 +1,69 @@
+<html lang="es"><head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sobre Mí</title>
+  <style type="text/css" id="operaUserStyle"></style></head>
+  <body>
+    <header id="header-placeholder"><p style="font-size: 1rem;"><b>Juan Pablo Damiano/</b>UADE Designs</p>
+<div class="menu-toggle" id="menu-toggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+<nav id="nav-menu">
+  <a href="index.html">Inicio</a>
+  <a href="conoceme.html">Sobre Mí</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="curriculum.html">Currículum</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('nav-menu').classList.toggle('active');
+  });
+</script>
+
+</header>
+    <main>
+      <div class="p-about-me">
+      <p>
+        Soy un administrador de sistemas con mas de 4 años en experiencia en el rubro
+      </p>
+      <p>
+        Egresado como Técnico en comunicacion, con experiencia en el desarrollo web y experiencia
+        en mantenimiento de sistemas, creo que los equipos pueden trabajar para mejorar/automatizar
+        sus procesos.
+      </p>
+      </div>
+      <a title="Hacé clic acá para más información" href="https://www.assurant.com.ar" target="_blank">
+      </a><div class="cards-container"><a title="Hacé clic acá para más información" href="https://www.assurant.com.ar" target="_blank">
+          </a><div class="card"><a title="Hacé clic acá para más información" href="https://www.assurant.com.ar" target="_blank">
+            </a><a title="Hacé clic acá para más información" href="https://es-es.ecolab.com" target="_blank">
+              <img src="./src/logo_ecolab.jpg" alt="">
+            </a>
+            <p>administrador de sistemas</p>
+          </div>
+        
+        <a title="Hacé clic acá para más información" href="https://www.assurant.com.ar" target="_blank">
+        <div class="card">
+          <img src="./src/logo_assurant.jpg" alt="">
+          <p>
+            Lider de equipo en area de gestion de pagos
+          </p>
+        </div>
+      </a>
+      </div>
+    </main>
+  
+  <footer><p>© 2024 Juan Pablo Damiano. All rights reserved.</p></footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#header-placeholder").load("header.html");
+  });
+</script>
+</body></html>
